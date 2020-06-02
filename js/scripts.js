@@ -1,4 +1,6 @@
-function convertToF(celsius) {
-  let fahrenheit = celsius * 9/5 + 32
-  return fahrenheit;
-};
+let fahrenheitToCelsius = function(userInput) {
+  return ((userInput-32)*5)/9;
+}
+
+  let fahrenheit =  parseFloat(prompt("Enter Temperature in Degrees Fahrenheit:"));
+  alert(fahrenheitToCelsius(fahrenheit).toFixed(2));
